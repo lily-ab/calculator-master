@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    style="@style/AppTheme">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dustbitmap"
+        android:orientation="vertical">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_marginBottom="5pt"
+            android:background="#141211"
+            android:alpha="0.75"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/numberField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="#141211"
+                android:fillViewport="true"
+                android:textColor="#AAAAAA"
+                android:textSize="40sp" />
+        </ScrollView>
+
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:columnCount="4"
+            android:gravity="center"
+            android:rowCount="6">
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="bracketClick"
+                android:text="(" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="bracketClick"
+                android:text=")" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="clearOneClick"
+                android:text="@string/arrow_left" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="clearClick"
+                android:text="C" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="sqrtClick"
+                android:text="@string/square_root_symbol" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="divXClick"
+                android:text="1/x" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="minClick"
+                android:text="+/-" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="opClick"
+                android:text="^" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="numClick"
+                android:text="7" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="numClick"
+                android:text="8" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="numClick"
+                android:text="9" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="opClick"
+                android:text="+" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="numClick"
+                android:text="4" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="numClick"
+                android:text="5" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="numClick"
+                android:text="6" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="opClick"
+                android:text="-" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="numClick"
+                android:text="1" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="numClick"
+                android:text="2" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="numClick"
+                android:text="3" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="opClick"
+                android:text="*" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="calcClick"
+                android:text="=" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="numClick"
+                android:text="0" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="pointClick"
+                android:text="." />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:onClick="opClick"
+                android:text="/" />
+        </GridLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

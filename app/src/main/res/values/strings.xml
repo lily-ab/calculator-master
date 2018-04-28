@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="square_root_symbol">\u221a</string>
+    <string name="arrow_left">\u003c-</string>
+</resources>
